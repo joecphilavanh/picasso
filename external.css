@@ -1,0 +1,120 @@
+.canvas{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+section{
+    background-color: skyblue;
+    border: 10px solid black;
+    margin-left: 742px;
+    margin-right: 742px;
+
+}
+.House{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.base{
+height: 200px;
+width: 200px;
+background-color: burlywood;
+position: absolute;
+z-index: 1;
+}
+.grass{
+    width: 400px;
+    height: 100px;
+    background-color: green;
+}
+.roof{
+    width: 0;
+    height: 0;
+    justify-content: center;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid gray;
+    position: relative;
+    z-index: 2;
+}
+.windows {
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+.window-left {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    z-index: 3;
+    margin-right: 25px;
+}
+.window-right {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    z-index: 3;
+    margin-left: 25px ;
+}
+.door{
+    width: 45px;
+    height: 130px;
+    background-color: brown;
+    position: relative;
+    z-index: 4;
+}
+.door-knob{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    right:208px;
+    top:223px;
+    z-index: 5;
+}
+
+@media (max-width: 1024px) {
+    .canvas{
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+    section{
+        background-color: skyblue;
+        border: 10px solid black;
+        margin-left: 742px;
+        margin-right: 742px;
+    
+    }
+    .House{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+@media (max-width: 480px) {
+    .canvas{
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+    section{
+        background-color: skyblue;
+        border: 10px solid black;
+        margin-left: 742px;
+        margin-right: 742px;
+    
+    }
+    .House{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+}
